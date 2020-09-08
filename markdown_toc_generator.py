@@ -94,15 +94,22 @@ def get_filename(ignore_argv = False):
 # provides a table of contents to std out
 # headings: a 2D array of heading labels and levels of the type: [[<heading name>, <heading level>]]
 # indent_factor: factor by which each element in the TOC will be indented by
-def generate_toc(headings, indent_factor):
+def generate_toc(headings, indent_factor, emphasis_level):
     toc_lines = []
 
     for heading in headings:
+        heading_name = heading[0]
+        heading_level = heading[1]
+
         indentation = ""
-        for i in range((heading[1] - 1)*indent_factor):
+        for i in range((heading_level - 1)*indent_factor):
             indentation += "&emsp;"
-        title = "[" + heading[0] + "]"
-        link = generate_link(heading[0])
+
+        if heading_level <= emphasis_level:
+            heading_name = "**" + heading_name + "**"
+        title = "[" + heading_name + "]"
+
+        link = generate_link(heading_name)
 
         toc_line = indentation + title + link + "<br />"
         toc_lines.append(toc_line)
@@ -132,10 +139,18 @@ def generate_link(heading):
 #       to generate a TOC for, and calls a function to generate the TOC
 def main():
     '''
-    the level 1 headers only (1) through all headings including level 6 (6)
+    the highest numbered heading to include
+        e.x.: DETAIL_LEVEL = 1 ==> include only level 1 headings (#)
+              DETAIL_LEVEL = 3 ==> include level 1, 2, and 3 headings (#, ##, and ###)
     must be an integer value 1-6
     '''
     DETAIL_LEVEL = 6
+
+    '''
+    the highest numbered heading to bold
+    must be an integer value 1-6
+    '''
+    EMPHASIS_LEVEL = 2
 
     '''
     factor by which each level will be indented by
@@ -153,6 +168,17 @@ def main():
         assert (DETAIL_LEVEL >= 1 and DETAIL_LEVEL <= 6)
     except:
         raise ValueError("The set DETAIL_LEVEL of {} is invalid. It must be between 1 and 6, inclusive".format(DETAIL_LEVEL))
+
+    #validate the EMPHASIS_LEVEL
+    try:
+        assert type(EMPHASIS_LEVEL) == int
+    except:
+        raise ValueError("The set EMPHASIS_LEVEL of {} is invalid. It must be an integer".format(EMPHASIS_LEVEL))
+    
+    try:
+        assert (EMPHASIS_LEVEL >= 1 and EMPHASIS_LEVEL <= 6)
+    except:
+        raise ValueError("The set EMPHASIS_LEVEL of {} is invalid. It must be between 1 and 6, inclusive".format(EMPHASIS_LEVEL))
 
     #validate the INDENT_FACTOR
     try:
@@ -174,7 +200,7 @@ def main():
         file_verified = verify_file(file_name)
     
     headers = get_headings(file_name, DETAIL_LEVEL)
-    generate_toc(headers, INDENT_FACTOR)
+    generate_toc(headers, INDENT_FACTOR, EMPHASIS_LEVEL)
 
 if __name__ == '__main__':
     main()
