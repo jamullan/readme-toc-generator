@@ -12,5 +12,6 @@ $ git clone https://github.com/jamullan/readme-toc-generator.git
 
 # Run the program and supply your .md file's name as an argument
 $ python3 markdown_toc_generator <your_file.md>
+
+# Copy the text from stdout and paste it in your .md file to serve as a hyperlinked table of contents
 ```
-*Copy the text from stdout and paste it in your .md file to server as a hyperlinked table of contents*
