@@ -1,5 +1,7 @@
 # Readme Table of Contents (TOC) Generator
-Generates a hyperlinked table of contents for .md files that use Github's flavor of the [CommonMark](<https://commonmark.org>) specification of Markdown.<br /><br />
+Generates a hyperlinked table of contents for .md files that use Github's flavor of the [CommonMark](<https://commonmark.org>) specification of Markdown.<br />
+[**Jump to Demo**](<#demo>)<br />
+<br />
 **Last updated (this file):** 9/8/2020<br />
 **Author:** John Mullan<br />
 
