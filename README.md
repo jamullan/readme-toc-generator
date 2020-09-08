@@ -3,17 +3,28 @@ Generates a hyperlinked table of contents for .md files that use Github's flavor
 **Last updated (this file):** 9/8/2020<br />
 **Author:** John Mullan<br />
 
-## How to Run
+## Usage
+### How to Run
 ```
 # Clone this repository
 $ git clone https://github.com/jamullan/readme-toc-generator.git
 
 # Place your .md file into your clone of this repository
 
+# Adjust the [configuration options](<#configuration-options>) if desired (see below)
+
 # Run the program and supply your .md file's name as an argument
 $ python3 markdown_toc_generator <your_file.md>
 
 # Copy the text from stdout and paste it in your .md file to serve as a hyperlinked table of contents
+```
+### Configuration Options
+The following configuation options can be adjusted inside of the `main()` function in `markdown_toc_generator.py`:<br/ >
+```python
+'''
+the highest numbered heading to include in the TOC
+'''
+DETAIL_LEVEL
 ```
 
 ## Demo
