@@ -3,6 +3,10 @@ Generates a hyperlinked table of contents for .md files that use Github's flavor
 **Last updated (this file):** 9/8/2020<br />
 **Author:** John Mullan<br />
 
+## Demo
+![Generating TOC from a .md file](demo_files/TOCGeneration.gif)
+![Rendered TOC](demo_files/TOCRendered.png)
+
 ## How to Run
 ```
 # Clone this repository
