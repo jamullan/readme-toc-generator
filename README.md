@@ -38,36 +38,3 @@ INDENT_FACTOR = 1
 ![Generating TOC from a .md file](demo_files/TOCGenV3.gif)
 ### Rendered TOC 
 ![Rendered TOC](demo_files/TOCRenderedV2.png)
-
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-
-[**Django: The Backend Web Framework**](<#**Django-The-Backend-Web-Framework**>)<br />
-&emsp;[**Database Setup**](<#**Database-Setup**>)<br />
-&emsp;&emsp;[SQLite Database Creation](<#SQLite-Database-Creation>)<br />
-&emsp;&emsp;[PostgreSQL Database Creation](<#PostgreSQL-Database-Creation>)<br />
-&emsp;&emsp;&emsp;[Restoring a Former PostgreSQL Database](<#Restoring-a-Former-PostgreSQL-Database>)<br />
-&emsp;&emsp;&emsp;[Creating a New PostgreSQL Database](<#Creating-a-New-PostgreSQL-Database>)<br />
-&emsp;&emsp;[Django Database Configuration](<#Django-Database-Configuration>)<br />
-&emsp;[**Environment Setup**](<#**Environment-Setup**>)<br />
-&emsp;&emsp;[Core Tool Installation](<#Core-Tool-Installation>)<br />
