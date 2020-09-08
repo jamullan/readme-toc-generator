@@ -5,7 +5,7 @@ Generates a hyperlinked table of contents for .md files that use Github's flavor
 
 ## Demo
 ![Generating TOC from a .md file](demo_files/TOCGenV3.gif)
-![Rendered TOC](demo_files/TOCRendered.png)
+![Rendered TOC](demo_files/TOCRenderedV2.png)
 
 ## How to Run
 ```
