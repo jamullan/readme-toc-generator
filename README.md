@@ -11,7 +11,7 @@ $ git clone https://github.com/jamullan/readme-toc-generator.git
 
 # Place your .md file into your clone of this repository
 
-# Adjust the [configuration options](<#configuration-options>) if desired (see below)
+# Adjust the configuration options if desired (see below)
 
 # Run the program and supply your .md file's name as an argument
 $ python3 markdown_toc_generator <your_file.md>
