@@ -3,12 +3,6 @@ Generates a hyperlinked table of contents for .md files that use Github's flavor
 **Last updated (this file):** 9/8/2020<br />
 **Author:** John Mullan<br />
 
-## Demo
-### TOC Generation
-![Generating TOC from a .md file](demo_files/TOCGenV3.gif)
-### TOC Rendering
-![Rendered TOC](demo_files/TOCRenderedV2.png)
-
 ## How to Run
 ```
 # Clone this repository
@@ -21,6 +15,35 @@ $ python3 markdown_toc_generator <your_file.md>
 
 # Copy the text from stdout and paste it in your .md file to serve as a hyperlinked table of contents
 ```
+
+## Demo
+### TOC Generation
+![Generating TOC from a .md file](demo_files/TOCGenV3.gif)
+### TOC Rendering
+![Rendered TOC](demo_files/TOCRenderedV2.png)
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 [**Django: The Backend Web Framework**](<#**Django-The-Backend-Web-Framework**>)<br />
 &emsp;[**Database Setup**](<#**Database-Setup**>)<br />
