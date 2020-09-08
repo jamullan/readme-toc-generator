@@ -19,12 +19,16 @@ $ python3 markdown_toc_generator <your_file.md>
 # Copy the text from stdout and paste it in your .md file to serve as a hyperlinked table of contents
 ```
 ### Configuration Options
-The following configuation options can be adjusted inside of the `main()` function in `markdown_toc_generator.py`:<br/ >
+The following configuation options, shown as set to their default values below, can be adjusted inside of the `main()` function in `markdown_toc_generator.py`:<br />
 ```python
-'''
-the highest numbered heading to include in the TOC
-'''
-DETAIL_LEVEL
+# the highest numbered heading to include in the TOC
+DETAIL_LEVEL = 6
+
+# the highest numbered heading to bold
+EMPHASIS_LEVEL = 2
+
+# factor by which each level will be indented by
+INDENT_FACTOR = 1
 ```
 
 ## Demo
