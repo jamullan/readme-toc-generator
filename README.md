@@ -34,7 +34,7 @@ INDENT_FACTOR = 1
 ## Demo
 ### TOC Generation
 ![Generating TOC from a .md file](demo_files/TOCGenV3.gif)
-### TOC Rendering
+### Rendered TOC 
 ![Rendered TOC](demo_files/TOCRenderedV2.png)
 
 <br />
